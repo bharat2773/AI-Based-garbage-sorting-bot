@@ -41,7 +41,7 @@ In addition to the 3D printed components, you will need to purchase the followin
 - Various electronic components (wires, breadboard, etc.)
 
 ## Dataset
-The dataset used for this project is the [Garbage Classification V2](https://www.kaggle.com/datasets/asdasdasasdas/garbage-classification) dataset from Kaggle. This dataset contains images of different types of garbage materials, including plastic, paper, metal, and organic waste.
+The dataset used for this project is the [Garbage Classification V2](https://www.kaggle.com/datasets/sumn2u/garbage-classification-v2) dataset from Kaggle. This dataset contains images of different types of garbage materials, including plastic, paper, metal, and organic waste.
 
 ## Software Implementation
 The software implementation for this project is done using Python and the TensorFlow deep learning library.
