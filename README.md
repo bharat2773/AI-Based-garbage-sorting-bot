@@ -71,7 +71,7 @@ To enable automated waste segregation, a camera mount is positioned above the co
 Proper tensioning of the timing belt is crucial, as it ensures optimal performance and prevents issues like belt slippage or misalignment. The combination of these components results in a reliable, durable, and efficient conveyor system, capable of meeting the demands of various automated waste segregation processes.
 
 ## Results and Accuracy
-The accuracy of the different models is evaluated on the test dataset, and the best performing model (Model 5) achieves an average accuracy of **88%**. This high accuracy demonstrates the effectiveness of the chosen model architecture and the quality of the dataset.
+The accuracy of the different models is evaluated on the test dataset, and the best performing model (Model 5) achieves an average accuracy of **98%**. This high accuracy demonstrates the effectiveness of the chosen model architecture and the quality of the dataset.
 
 ## Usage
 To use this project, you will need to:
