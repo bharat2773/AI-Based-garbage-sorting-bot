@@ -1,5 +1,4 @@
-# AI-Based-garbage-sorting-bot
-
+# AI-Based Garbage Sorting Bot
 
 This project aims to develop an AI-powered garbage sorting system that can automatically classify different types of garbage materials using computer vision techniques.
 
@@ -13,6 +12,7 @@ This project aims to develop an AI-powered garbage sorting system that can autom
   - [Model Architecture](#model-architecture)
   - [Training and Evaluation](#training-and-evaluation)
   - [Real-time Object Detection](#real-time-object-detection)
+- [Garbage Sorting Mechanism](#garbage-sorting-mechanism)
 - [Results and Accuracy](#results-and-accuracy)
 - [Usage](#usage)
 - [Future Improvements](#future-improvements)
@@ -61,22 +61,32 @@ The code loads the dataset, preprocesses the images, and trains the models using
 ### Real-time Object Detection
 The modified code provided in this README includes a `detect_objects_from_webcam` function that uses the trained model to perform real-time object detection on the video feed from the webcam. This allows the system to classify the garbage materials in real-time.
 
+## Garbage Sorting Mechanism
+The conveyor belt system is powered by a 12V DC motor operating at 100 RPM, providing the necessary rotational force to drive the belt. The system utilizes a 280 mm GT2 timing belt paired with a 20-tooth pulley, ensuring precise, synchronized movement and preventing any slippage during operation. To minimize friction and enhance efficiency, ball bearings are incorporated, allowing the conveyor to run smoothly while reducing wear and tear on the components.
+
+The rotational motion from the motor is effectively transferred to the pulley, which then converts it into linear motion, driving the conveyor belt forward. This setup is well-suited for applications that require moderate speed and precise control, such as material handling or light manufacturing processes.
+
+To enable automated waste segregation, a camera mount is positioned above the conveyor belt. This camera captures images of the items moving along the belt and, using computer vision algorithms, identifies the type of waste. Based on the waste classification, a further rotary disk mechanism is integrated at the end of the conveyor belt. This rotary disk can rotate and divert the waste items into separate collection bins, segregating the waste into different categories (e.g., plastic, metal, organic) for efficient recycling and disposal.
+
+Proper tensioning of the timing belt is crucial, as it ensures optimal performance and prevents issues like belt slippage or misalignment. The combination of these components results in a reliable, durable, and efficient conveyor system, capable of meeting the demands of various automated waste segregation processes.
+
 ## Results and Accuracy
 The accuracy of the different models is evaluated on the test dataset, and the best performing model (Model 5) achieves an average accuracy of **88%**. This high accuracy demonstrates the effectiveness of the chosen model architecture and the quality of the dataset.
 
 ## Usage
 To use this project, you will need to:
 1. 3D print the required components.
-2. Assemble the hardware setup, including the Raspberry Pi, camera, and servo motor.
+2. Assemble the hardware setup, including the Raspberry Pi, camera, servo motor, and rotary disk mechanism.
 3. Install the necessary software dependencies, including Python, TensorFlow, and OpenCV.
-4. Run the provided Python script to train the model and start the real-time object detection.
+4. Run the provided Python script to train the model and start the real-time object detection and sorting process.
 
 ## Future Improvements
 Some potential future improvements for this project include:
-- Integrating the system with a mechanical sorting mechanism to automate the garbage sorting process.
+- Optimizing the mechanical sorting mechanism for faster and more efficient garbage segregation.
 - Expanding the dataset to include a wider range of garbage materials.
 - Exploring more advanced deep learning architectures for improved classification accuracy.
 - Developing a user-friendly interface for the system.
+- Integrating the system with smart waste management solutions for comprehensive waste handling.
 
 ## Contributing
 Contributions to this project are welcome. If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
@@ -84,7 +94,6 @@ Contributions to this project are welcome. If you have any suggestions, bug repo
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
-
 This project is based on the code from the Kaggle notebook "Material Classifier - TensorFlow CNN" by Omar El Ganainy: [https://www.kaggle.com/code/omarelg/material-classifier-tensorflow-cnn]
 
-The original code has been modified and extended to include additional features, such as 3D printed components and real-time object detection.
+The original code has been modified and extended to include additional features, such as 3D printed components, real-time object detection, and the garbage sorting mechanism.
