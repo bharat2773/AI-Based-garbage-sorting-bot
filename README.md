@@ -84,7 +84,6 @@ Contributions to this project are welcome. If you have any suggestions, bug repo
 ## License
 This project is licensed under the [MIT License](LICENSE).
 
-# AI-based Garbage Sorting System
 
 This project is based on the code from the Kaggle notebook "Material Classifier - TensorFlow CNN" by Omar El Ganainy: [https://www.kaggle.com/code/omarelg/material-classifier-tensorflow-cnn]
 
